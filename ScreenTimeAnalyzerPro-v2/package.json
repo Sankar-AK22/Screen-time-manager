@@ -1,0 +1,22 @@
+{
+  "name": "screentime-analyzer-pro",
+  "version": "2.0.0",
+  "description": "Real-time screen time analyzer with modern UI",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "electron": "electron .",
+    "backend": "cd backend && python main.py",
+    "frontend": "cd frontend && npm run dev",
+    "install-all": "cd frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["screentime", "tracker", "productivity"],
+  "author": "ScreenTime Analyzer Pro",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "concurrently": "^8.2.2"
+  }
+}
+

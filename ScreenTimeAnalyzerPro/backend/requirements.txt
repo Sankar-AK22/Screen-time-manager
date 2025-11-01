@@ -1,0 +1,51 @@
+# Core FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+
+# Database (updated for Python 3.13 compatibility)
+sqlalchemy>=2.0.35
+alembic>=1.14.0
+
+# Data validation (using newer versions with pre-built wheels)
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# System monitoring and tracking
+psutil==5.9.6
+
+# Windows-specific (install on Windows only)
+pywin32>=307; sys_platform == 'win32'
+
+# macOS-specific (install on macOS only)
+pyobjc-framework-Cocoa==10.0; sys_platform == 'darwin'
+pyobjc-framework-Quartz==10.0; sys_platform == 'darwin'
+
+# Idle detection (cross-platform)
+pynput==1.7.6
+
+# Utilities
+python-dotenv==1.0.0
+python-multipart==0.0.6
+
+# Date/time handling
+python-dateutil==2.8.2
+
+# Export functionality (using pre-built wheel)
+pandas>=2.0.0
+
+# PDF generation (optional - comment out if not needed)
+# weasyprint==60.1
+
+# Logging
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Code quality
+black==23.11.0
+flake8==6.1.0
+
